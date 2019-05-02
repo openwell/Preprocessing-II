@@ -1,1 +1,23 @@
 // Navigation Styles here
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px dashed @navigation-border;
+  padding: 20px 10%;
+  @media (max-width: 500px) {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        padding: 10px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
