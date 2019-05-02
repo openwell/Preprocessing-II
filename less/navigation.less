@@ -1,1 +1,27 @@
 // Navigation Styles here
+header {
+  .flex_space-between();
+  border-bottom: 2px dashed @navigation-border;
+  padding: 20px 10%;
+  @media @mobile {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 0 0 0;
+  }
+
+  nav {
+    ul {
+      .flex_space-between();
+      li {
+        padding: 10px;
+        font-size: 1.6rem;
+        &:hover{
+          background-color: @shark;
+          color: @white;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
